@@ -4,11 +4,14 @@
     text-decoration: none;
     list-style: none;
 }
-body {
-    font-family: 'Manrope', sans-serif;
-    height: 100%;
-    width: 100%;
-  }
+
+#index {
+  font-family: 'Manrope', sans-serif;
+  background-image: url(../img/fond.jpg);
+  background-size: cover;
+  height:100vh;
+  width: 100vw;  
+}
   
 #wrap {
   width: 100%;
@@ -18,8 +21,6 @@ body {
   position: relative;
   background-color: #a3969600; 
 }
-
-
 
 .navbar {
   height: 50px;
@@ -87,21 +88,14 @@ body {
   box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, .348 );
 }
 
-body {
-  background-image: url(../img/fond.jpg);
-  background-size: cover;
-  height:100vh;
-  width: 100vw;  
-}
-
-main img{
+#index main img{
   padding-left: 33%;
   margin-top: 9.55%;
   position: relative;
   z-index: 0;
 }
 
-main p{
+#index main p{
   color: white;
   font-weight: 500;
   width: 60%;
