@@ -87,8 +87,8 @@ body {
   box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, .348 );
 }
 
-main {
-  background-image: url(img/fond.jpg);
+body {
+  background-image: url(../img/fond.jpg);
   background-size: cover;
   height:100vh;
   width: 100vw;  
