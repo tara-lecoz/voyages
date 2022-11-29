@@ -1,0 +1,23 @@
+body {
+    background-image: url(images/sunrise-sydney-adobestock-264958837-1-1280x800.jpeg);
+}
+
+section > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+section > ul > li:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+section li ul {
+    list-style: none;
+    display: flex;
+}
+
+section li img {
+    width: 300px;
+}
