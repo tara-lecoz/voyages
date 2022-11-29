@@ -3,9 +3,10 @@ body {
 }
 
 section > ul {
-    list-style: none;
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    margin: 1% 8%;
 }
 
 section > ul > li:first-child {
@@ -14,7 +15,6 @@ section > ul > li:first-child {
 }
 
 section li ul {
-    list-style: none;
     display: flex;
 }
 
