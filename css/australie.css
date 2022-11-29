@@ -1,5 +1,6 @@
 body {
-    background-image: url(../img/sunrise-sydney-adobestock-264958837-1-1280x800.jpeg);
+    background-image: url(../img/Australie/fond-australie.jpeg), url(../img/Australie/Hobart.jpg);
+    background-repeat: no-repeat;
 }
 
 section > ul {
@@ -12,6 +13,7 @@ section > ul {
 section > ul > li:first-child {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 section li ul {
@@ -20,4 +22,48 @@ section li ul {
 
 section li img {
     width: 300px;
+}
+
+.pair {
+    margin: 1% 5%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.1) 100%);
+}
+
+.impair {
+    margin: 1% 5%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,1) 100%);
+}
+
+article li img {
+    height: 150px;
+    object-fit: contain;
+}
+
+#grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    height: 130vh;
+    padding: 2% 0;
+}
+
+#grille li:last-child {
+    grid-column: 1 / 4;
+    grid-row-start: 4;
+}
+
+#grille li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
 }
