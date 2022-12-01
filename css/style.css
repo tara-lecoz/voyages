@@ -154,6 +154,7 @@ footer section div {
   background-position: center;
   position: relative;
   margin-right: 4%;
+  margin-top: 1%;
 }
 
 footer section:first-child a:hover ~ div {
