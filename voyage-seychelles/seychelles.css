@@ -16,6 +16,8 @@ header .header{
   justify-content: space-evenly;
   align-items: center;
   /* text-transform: uppercase; */
+  position: relative;
+  z-index: 99999;
 }
 header .menu{
   list-style: none;
@@ -23,7 +25,7 @@ header .menu{
 }
 header .menu li{
   display: inline-block;
-  line-height: 70px;
+  /* line-height: 70px; */
   position: relative;
 }
 header .menu li a{
@@ -33,88 +35,92 @@ header .menu li a{
   font-size: 18px;
   width: 150px;
   transition: 0.4s;
+  box-sizing: border-box;
+  padding: 20px;
 }
 header .menu li a:hover{
   background-color: #11c34f;
 }
+
+header .submenu:hover {
+  display: block;
+  /* position: relative; */
+  /* z-index: 9999; */
+}
+
+
 header .submenu1{
   position: absolute;
-  background-color: rgb(249, 56, 7);
+  background-color: rgb(249, 164, 7);
   width: 150px;
-  left: 0;
+  /* left: 30%; */
   display: none;
 }
 header .submenu2{
   position: absolute;
-  background-color: rgb(9, 16, 202);
+  background-color: rgb(3, 92, 216);
   width: 150px;
   left: 100%;
-  top: 0;
   display: none;
 }
-header .menu li:hover .submenu1{
+ header #submenu-members {
+  left: calc(50% + 2.3px);
+}
+
+header .menu li#continents:hover ~  #submenu-continents{
   display: block;
 }
-header .submenu1 li:hover .submenu2{
+header .menu li#continents-1:hover ~  #submenu-continents-1{
+  display: block;
+}
+header .menu li#continents-2:hover ~  #submenu-continents-2{
+  display: block;
+}
+header .menu li#continents-3:hover ~  #submenu-continents-3{
+  display: block;
+}
+header .menu li#continents-4:hover ~  #submenu-continents-4{
+  display: block;
+}
+header .menu li#continents-5:hover ~  #submenu-continents-5{
+  display: block;
+}
+header .menu li#continents-6:hover ~  #submenu-continents-6{
   display: block;
 }
 
-/*Navigation header****************************************************************************************/  
-/* #wrap {
-  width: 50%;
-  height: 25px;
-  margin: 0;
-  z-index: 99;
-  position: relative;
-  background-color: #a3969600; 
-}
-.navbar {
-  height: 50px;
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  z-index: 1;
-} 
-.navbar li {
-  height: auto;
-  width: 135.8px;
-  float: left;
-  text-align: center;
-  list-style: none;
-  font: normal bold 13px/1em Arial, Verdana, Helvetica;
-  padding: 0;
-  margin: 0; */
-  /* background-color: #ef5252; */
-  /* background: rgba(255, 255, 255, .3);
-  box-shadow: 10px 10px 60px -8px rgba(120, 120, 120, 0.5);
-}
-.navbar a {
-  padding: 18px 0;
-  text-decoration: none;
-  color: white;
+header .menu li#members:hover ~  #submenu-members{
   display: block;
-} 
-.navbar li:hover,a:hover {
-  background: rgba(255, 255, 255, 0.150);
-  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, 0.348);
-}  
-.navbar li ul {
-  display: none;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}  
-.navbar li:hover ul {
-  display: block;
-} 
-.navbar li ul li {
-  background: rgba(255, 255, 255, .150);
-  box-shadow: 10px 10px 60px -8px rgba(0, 0, 0, .348 );
 }
-.navbar li ul li a:hover {
-  background: rgba(255, 255, 255, .150);
-  box-shadow: 10px 10px 60px -8px #00000059;
-} */
+header .menu li#members-1:hover ~  #submenu-members-1{
+  display: block;
+}
+header .menu li#members-2:hover ~  #submenu-members-2{
+  display: block;
+}
+header .menu li#members-3:hover ~  #submenu-members-3{
+  display: block;
+}
+header .menu li#members-4:hover ~  #submenu-members-4{
+  display: block;
+}
+header .menu li#members-5:hover ~  #submenu-members-5{
+  display: block;
+}
+header .menu li#members-6:hover ~  #submenu-members-6{
+  display: block;
+}
+
+
+.test-1{
+  display: flex;
+  flex-direction: row;
+}
+
+header .menu li#members:hover ~  #submenu-members{
+  display: block;
+}
+
 
 /*Le drapeau et les armoiries*****************************************************************************/
 .drapeau{
