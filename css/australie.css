@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif
+}
+
+#australie {
+    background-image: url(../img/Australie/fond-australie.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main img {
+    border-radius: 10px;
+}
+
+.sans-arrondi {
+    border-radius: 0;
+}
+
+:is(#australie, #sydney) section > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1% 8%;
+}
+
+:is(#australie, #sydney) section > ul > li:first-child {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+:is(#australie, #sydney) section li ul {
+    display: flex;
+}
+
+:is(#australie, #sydney) section li img {
+    width: 300px;
+}
+
+:is(#australie, #sydney) .pair {
+    margin: 1% 5%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(360deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.1) 100%);
+}
+
+#australie .impair {
+    margin: 1% 5%;
+    padding: 1%;
+    border-radius: 20px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(255,255,255,1) 100%);
+}
+
+#australie article li img {
+    height: 150px;
+    align-self: center;
+}
+
+#grille {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 2%;
+    grid-row-gap: 2%;
+    height: 130vh;
+    padding: 2% 0;
+}
+
+#grille li:last-child {
+    grid-column: 1 / 4;
+    grid-row-start: 4;
+}
+
+#grille li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+    flex-shrink: 0;
+}
+
+#nourriture {
+    background-color: white;
+    padding: 1%;
+}
+
+thead tr {
+    font-size: 1.5em;
+}
+
+table img {
+    height: 20vh;
+}
+
+table td {
+    text-align: center;
+}
+
+/*Page sydney*/
+#sydney {
+    background-image: url(../img/Australie/Sydney.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.centrer, .droite, .gauche {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.centrer {
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1%;
+}
+
+.droite {
+    justify-content: right;
+    flex-direction: row-reverse;
+    padding: 0 1%;
+}
+
+.droite img {
+    margin-left: 1%;
+}
+
+.gauche {
+    justify-content: left;
+    padding: 0 1%;
+}
+
+.gauche img {
+    margin-right: 1%;
+}
+
+.droite:last-child {
+    padding-bottom: 2.5%;
+}
+
+:is(.droite, .gauche) img:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    margin: 0 40px;
+}
+
+.droite img:hover ~ div {
+    padding-right: 1%;
+}
+
+.gauche img:hover ~ div {
+    padding-left: 2%;
+}
+
+main a {
+    color: black;
+    text-decoration: underline;
+}
+
+main a:hover {
+    background-color: red;
+    color: white;
+}
+
+:is(.centrer, .droite, .gauche) div {
+    text-align: justify;
+}
+
+:is(.droite, .gauche) img {
+    height: 20vw;
+}
