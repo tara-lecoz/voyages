@@ -1,0 +1,68 @@
+/* body page argentine, header page argentine & nav de la page */
+
+body {
+    font-family: 'Philosopher', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #75AEE0;
+    width: 100%;
+    z-index: 1;
+}
+
+header a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(12, 5, 87);
+    transition: .3s;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    width: 80%;
+    margin-left: 10vh;
+}
+
+header a:hover {
+    background-color: #F6B506;
+}
+
+#logotaraheader {
+    width: 5vh;
+    margin-left: 3vh;
+}
+
+main img {
+    width: 70vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+.introductioncontent {
+    display: flex;
+    flex-direction: row;
+}
+
+#searchbar {
+    border: 2px solid #F6B506;
+    border-radius: 5px;
+}
+
+.pintroductioncontent {
+    color: #75AEE0;
+    margin: 1vh 1vh 1vh 1vh;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
