@@ -8,6 +8,7 @@
     background-image: url(../img/Australie/fond-australie.jpeg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 main img {
