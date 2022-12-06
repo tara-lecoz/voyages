@@ -87,7 +87,7 @@ body {
 }
 
 main {
-  background-image: url(./img-voyages/fond.jpg);
+  background-image: url(../img-voyages/fond.jpg);
   background-size: cover;
   height:100vh;
   width: 100vw;  
@@ -121,7 +121,7 @@ footer {
   justify-content: space-around;
   align-items: flex-end;
   background: linear-gradient(360deg, rgb(211, 211, 211) 66%, rgba(255,255,255,0) 100%);
-  height: 40vh;
+  height: 15vh;
   margin-top: 1%;
   padding: 1% 1%;
   width: 100%;
