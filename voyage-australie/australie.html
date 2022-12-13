@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Australie</title>
     <link rel="stylesheet" href="../css/australie.css">
-    <!-- <link rel="stylesheet" href="../voyages.css"> -->
+    <link rel="stylesheet" href="../css/voyages.css">
     <link rel="icon" type="image/png" href="../img-voyages/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -22,41 +22,87 @@
 
 <body id="australie">
     <header>
-        <nav id="wrap">
-            <ul class="navbar">
-                <li>
-                    <a href="../index.html">Accueil</a>
-                </li>
-                <li>
-                    <a href="#">Continent</a>
-                    <ul>
-                        <li><a href="../voyage-japon/japon.html">Asie</a></li>
-                        <li><a href="../voyage-seychelles/">Afrique</a></li>
-                        <li><a href="../voyage-usa/usa.html">Amerique du Nord</a ></li>
-                        <li><a href="../voyage-argentine/argentine.html">Amerique du Sud</a></li>
-                        <li>Oceanie
-                            <ul>
-                                <li><a href="./australie.html">Australie</a>
-                                    <ul>
-                                        <li><a href="./sydney.html">Sydney</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="../voyage-italie/italie.html">Europe</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Membres</a>
-                    <ul>
-                        <li><a href="../voyage-usa/usa.html">Andrea</a></li>
-                        <li><a href="../voyage-argentine/argentine.html">Tara</a></li>
-                        <li><a href="../voyage-japon/japon.html">Alexis</a></li>
-                        <li><a href="../voyage-australie/australie.html">Jérôme</a></li>
-                        <li><a href="../voyage-seychelles/seychelles.html">Sophie</a></li>
-                        <li><a href="../voyage-italie/italie.html">Lucas</a></li>
-                    </ul>
-                </li>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Accueille</a></li>
+                <li id="continents"><a href="#">Continents</a></li>
+                <ul id="submenu-continents" class="submenu submenu1">
+                    <div class="test-1">
+                        <li id="continents-1"><a href="#">Amérique du Sud</a></li>
+                        <ul id="submenu-continents-1" class="submenu submenu2">
+                            <li><a href="../voyage-argentine/argentine.html">Argentine</a></li>
+                        </ul>
+                    </div>
+                    <div class="test-1">
+                        <li id="continents-2"><a href="#">Europe</a></li>
+                        <ul id="submenu-continents-2" class="submenu submenu2">
+                            <li><a href="../voyage-italie/italie.html">Italie</a></li>
+                        </ul>
+                    </div>
+                    <div class="test-1">
+                        <li id="continents-3"><a href="#">Amérique du Nord</a></li>
+                        <ul id="submenu-continents-3" class="submenu submenu2">
+                            <li><a href="../voyage-usa/usa.html">USA</a></li>
+                        </ul>
+                    </div>
+                    <div class="test-1">
+                        <li id="continents-4"><a href="#">Asie</a></li>
+                        <ul id="submenu-continents-4" class="submenu submenu2">
+                            <li><a href="../voyage-japon/japon.html">Japon</a></li>
+                        </ul>
+                    </div>
+                    <div class="test-1">
+                        <li id="continents-5"><a href="#">Afrique</a></li>
+                        <ul id="submenu-continents-5" class="submenu submenu2">
+                            <li><a href="../voyage-seychelles/seychelles.html">Les Seychelles</a></li>
+                        </ul>
+                    </div>
+                    <div class="test-1">
+                        <li id="continents-6"><a href="#">Océanie</a></li>
+                        <ul id="submenu-continents-6" class="submenu submenu2">
+                            <li><a href="../voyage-australie/australie.html">Australie</a></li>
+                        </ul>
+                    </div>
+                </ul>
+                <li id="members"><a href="#">Membres</a></li>
+                <ul id="submenu-members" class="submenu submenu1">
+                    <div class="test-1">
+                        <li id="members-1"><a href="#">Tara</a></li>
+                        <ul id="submenu-members-1" class="submenu submenu2">
+                            <li><a href="../voyage-argentine/argentine.html">Argentine</a></li>
+                        </ul>
+                    </div>
+                    <div class="test-1">
+                        <li id="members-2"><a href="#">Lucas</a></li>
+                        <ul id="submenu-members-2" class="submenu submenu2">
+                            <li><a href="../voyage-italie/italie.html">Italie</a></li>
+                        </ul>
+                    </div>
+                    <div class="test-1">
+                        <li id="members-3"><a href="#">Andrea</a></li>
+                        <ul id="submenu-members-3" class="submenu submenu2">
+                            <li><a href="../voyage-usa/usa.html">USA</a></li>
+                        </ul>
+                    </div>
+                    <div class="test-1">
+                        <li id="members-4"><a href="#">Alexis</a></li>
+                        <ul id="submenu-members-4" class="submenu submenu2">
+                            <li><a href="../voyage-japon/japon.html">Japon</a></li>
+                        </ul>
+                    </div>
+                    <div class="test-1">
+                        <li id="members-5"><a href="#">Sophie</a></li>
+                        <ul id="submenu-members-5" class="submenu submenu2">
+                            <li><a href="./seychelles.html">Les Seychelles</a></li>
+                        </ul>
+                    </div>
+                    <div class="test-1">
+                    <li id="members-6"><a href="#">Jérôme</a></li>
+                        <ul id="submenu-members-6" class="submenu submenu2">
+                            <li><a href="../voyage-australie/australie.html">Australie</a></li>
+                        </ul>
+                    </div>
+                </ul>
             </ul>
         </nav>
     </header>
